@@ -1,0 +1,6 @@
+/* pages/collection/collection.wxss */
+.videoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

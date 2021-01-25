@@ -1,0 +1,52 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section1">
+      <view class="label" style="width: 100rpx;padding: 5rpx;">影片: </view>
+      <view style="width: 500rpx">
+        <input class="movieInput" placeholder-style="color: #CCCCCC" placeholder="请输入查询的影片名"/>
+      </view>
+      <view class="queryBtn" style="width: 160rpx;padding: 10rpx;">
+        <button class="btn" size="mini" type="primary" bindtap="handlerQuery">查询</button>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="detailLabel">影片详情</view>
+    <view class="line"></view>
+    <view class="page-section2">
+      <view class="nameContainer">
+        <text style="font-size: 40rpx">送你一朵小红花</text>
+      </view>
+      <view class="detailContainer">
+        <view class="imgContainer">
+          <image src="/images/hot_movie/table/xiaohong_list.jpg" style="width: 280rpx;height: 400rpx;"></image>
+        </view>
+        <view class="infoContainer" style="width: 300rpx;">
+          <view>导演: 韩延</view>
+          <view>编剧:  韩延 / 韩今谅 / 贾佳薇 / 于勇敢 / 李晗</view>
+          <view>主演:  易烊千玺 / 刘浩存 / 朱媛媛 / 高亚麟 / 夏雨 / 岳云鹏 / 陈祉希 / 李晓川 / 孔琳 / 吴晓亮 / 张绍刚 / 孙强 / 安笑歌 / 李增辉 / 姚未平 / 张浩天 / 柴陆</view>
+          <view>类型: 剧情</view>
+          <view>制片国家/地区: 中国大陆</view>
+          <view>语言:  汉语普通话</view>
+          <view>上映时间: 2020-12-31(中国大陆)</view>
+          <view>片长: 128分钟</view>
+          <view>又名: A Little Red Flower</view>
+        </view>
+        <view class="vline" style="width: 3rpx;height: 400rpx;background-color: #EEEEEE"></view>
+        <view class="scoreContainer">
+          末日评分: 7.4
+        </view>
+      </view>
+    </view>
+    <!-- <view class="page-section2-1" wx:if="false" >
+      另一种显示
+    </view> -->
+    <view class="contentContainer">
+      剧情详情
+    </view>
+    <view class="line"></view>
+    <view>
+      两个抗癌家庭，两组生活轨迹。影片讲述了一个温情的现实故事，思考和直面了每一个普通人都会面临的终极问题——想象死亡随时可能到来，我们唯一要做的就是爱和珍惜。
+    </view>
+  </view>
+</view>

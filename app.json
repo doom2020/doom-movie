@@ -1,0 +1,67 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/upcoming/upcoming",
+    "pages/top/top",
+    "pages/collection/collection"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#CC0000",
+    "navigationBarTitleText": "末日影院",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#0033FF",
+    "selectedColor": "#FF0000",
+    "backgroundColor": "#99CCCC",
+    "borderStyle": "black",
+    "position": "bottom",
+    "custom": false,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "热映",
+        "iconPath": "images/tab_bar/shouye.png",
+        "selectedIconPath": "images/tab_bar/shouye_selected.png"
+      },
+      {
+        "pagePath": "pages/upcoming/upcoming",
+        "text": "即将上映",
+        "iconPath": "images/tab_bar/yingyuan.png",
+        "selectedIconPath": "images/tab_bar/yingyuan_selected.png"
+      },
+      {
+        "pagePath": "pages/top/top",
+        "text": "Top100",
+        "iconPath": "images/tab_bar/dianying.png",
+        "selectedIconPath": "images/tab_bar/dianying_selected.png"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "影片详情",
+        "iconPath": "images/tab_bar/detail.png",
+        "selectedIconPath": "images/tab_bar/detail_selected.png"
+      },
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "我的收藏",
+        "iconPath": "images/tab_bar/shoucang.png",
+        "selectedIconPath": "images/tab_bar/shoucang_selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 100000,
+    "downloadFile": 100000
+  },
+  "debug": true,
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序为您提供更加优质服务"
+    }
+  }
+}

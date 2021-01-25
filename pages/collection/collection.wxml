@@ -1,0 +1,64 @@
+<!--pages/collection/collection.wxml-->
+<view style="width: 100%">
+  <camera device-position="front" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+  <button style="width: 100%" type="primary" bindtap="takePhoto" style="margin-top: 10rpx">美颜相机</button>
+  <view class="line" style="width: 100%;height: 3rpx;background-color: #EEEEEE"></view>
+  <view class="page__bd">
+    <!-- <view class="section section_gap">
+      <text class="section__title">设置left/right icon</text>
+      <view class="body-view">
+        <slider bindchange="slider1change" left-icon="cancel" right-icon="success_no_circle"/>
+      </view>
+    </view>
+    <view class="section section_gap">
+      <text class="section__title">设置step</text>
+      <view class="body-view">
+        <slider bindchange="slider2change" step="5"/>
+      </view>
+    </view>
+    <view class="section section_gap">
+        <text class="section__title">显示当前value</text>
+        <view class="body-view">
+            <slider bindchange="slider3change" show-value/>
+        </view>
+    </view> -->
+
+    <view class="section section_gap">
+      <text class="section__title">设置美颜值大小</text>
+      <view class="body-view">
+        <slider bindchange="slider4change" min="50" max="200" show-value/>
+      </view>
+    </view>
+  </view>
+  <view>
+    <text>预览</text>
+  </view>
+  <view class="line" style="width: 100%;height: 3rpx;background-color: #EEEEEE"></view>
+  <image mode="widthFix" src="{{src}}"></image>
+  <!-- <view class="line" style="width: 100%;height: 3rpx;background-color: #EEEEEE"></view>
+  <view>视频播放</view>
+  <view class="page-section tc">
+    <view class="videoContainer">
+      <video
+        id="myVideo" 
+        src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" 
+        binderror="videoErrorCallback" 
+        danmu-list="{{danmuList}}" 
+        enable-danmu 
+        danmu-btn 
+        show-center-play-btn='{{false}}' 
+        show-play-btn="{{true}}" 
+        controls
+        picture-in-picture-mode="{{['push', 'pop']}}"
+        bindenterpictureinpicture='bindVideoEnterPictureInPicture'
+        bindleavepictureinpicture='bindVideoLeavePictureInPicture'
+      ></video>
+    </view>
+    <view style="margin: 30rpx auto" class="weui-label">弹幕内容</view>
+    <input bindblur="bindInputBlur" class="weui-input" type="text" placeholder="在此处输入弹幕内容" />
+    <button style="margin: 30rpx auto"  bindtap="bindSendDanmu" class="page-body-button" type="primary" formType="submit">发送弹幕</button>
+    <navigator style="margin: 30rpx auto"  url="picture-in-picture" hover-class="other-navigator-hover">
+      <button type="primary" class="page-body-button" bindtap="bindPlayVideo">小窗模式</button>
+    </navigator> -->
+  <!-- </view> -->
+</view>

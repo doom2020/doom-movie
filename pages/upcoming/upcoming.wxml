@@ -1,0 +1,36 @@
+<!--pages/upcoming/upcoming.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper" id="swip">
+      <swiper class="swip" indicator-dots="{{indicatorDots}}" autoplay="{{isAutoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="changeImage" current="{{swiperCurrent}}">
+        <block wx:for="{{movieImgArray}}" wx:key="*this">
+          <swiper-item>
+            <image webp="true" src="{{item.src}}" class="swipImg" bindtap="handlerClick" id="{{item.id}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="line" id="line1"></view>
+    <view class="tabHeader" id="titleHead">
+      <view>
+        <text class="title">即将上映</text>
+      </view>
+      <view>
+        <text class="pageChange">3/{{totalCount}}</text>
+        <image src="/images/common/arrow-left-filling.png" class="toolImg" bindtap="previewPage"></image>
+        <image src="/images/common/arrow-right-filling.png" class="toolImg" bindtap="nextPage"></image>
+      </view>
+    </view>
+    <view class="line" id="line2"></view>
+    <scroll-view style="height: {{scrollViewHeight}}px" scroll-y="true" enable-flex="true" class="tableList">
+      <block wx:for="{{tableImgArray}}" wx:key="*this">
+        <view class="movieInfo">
+          <image id="{{item.id}}" src="{{item.src}}" style="width: 200rpx;height:280rpx;" bindtap="handlerMovieDetail"></image>
+          <text class="name">{{item.name}}</text>
+          <image src="{{item.srcStar}}" style="width: 140rpx;height: 80rpx;"></image>
+          <button id="{{item.id}}" size="mini" type="warn" bindtap="handlerBuy">预约购票</button>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>
